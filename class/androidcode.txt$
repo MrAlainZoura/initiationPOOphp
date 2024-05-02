@@ -1,0 +1,66 @@
+setContent{
+
+var email= remember {
+	mutableStateOf("")
+}
+var password= remember {
+	mutableStateOf("")
+}
+
+nomApk Them {
+colum (
+modifier = Modifier.fillMaxSize().padding(8.dp),
+verticaArrangement = Arrangement.Center
+){
+	Text(‘’Formation’’) 
+Text(‘’Bonjour XXX’’)
+Button (OnClick = {  } ) {
+	Text(‘’Se connecter’’)
+}
+OutLinebutton(OnClick={ } ) { 
+	Text(‘’xxxyyy’’)
+}
+TextField (
+	modifier = Modifier.fillMaxSize(),
+	Value = email.value,
+	OnValueChange = {
+		email.value = it
+	})
+
+	TextField (
+	modifier = Modifier.fillMaxSize().paddaing(start =16.dp),
+	Value = password.value,
+	OnValueChange = {
+		password.value = it
+	})
+	OutLinebutton(
+		modifier = Modifier.fillMaxSize().padding(top =15.dp),
+		OnClick={ } 
+	) { 
+		Text("Se connecter")
+	  }
+}
+}
+}
+
+setContent {
+	
+	var text= remember{ mutableStateOf("")}
+
+	NomApkTheme {
+		colum(modifier = Modifier
+		.fillMaxWidth()
+		){	value = text.value,
+				onValueChange ={
+					text.value=it
+				}
+		
+			outLineButton (modifier= Modifier.fillMaxWidth()
+			.padding(top=16.dp),
+			Onclick = {}){
+			Text(text="Detecter Langue")
+			}
+
+		}
+	}
+}
